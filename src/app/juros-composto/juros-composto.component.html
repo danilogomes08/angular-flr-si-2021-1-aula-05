@@ -7,18 +7,19 @@
     </label>
     <input type="number" class="form-control mb-3" id="exampleFormControlInput1" [(ngModel)]="valor">
 
-    <label for="periodo" class="form-label">
-      Informe em quantos meses irá pagar
-    </label>
-    <input type="number" class="form-control mb-3" id="exampleFormControlInput1" [(ngModel)]="periodo"> 
-
     <label for="juros" class="form-label">
       Informe a quantidade de juros (%)
     </label>
     <input type="number" class="form-control mb-3" id="exampleFormControlInput1" [(ngModel)]="juros">
   </div>
 
-  <table class="table">
+    <label for="periodo" class="form-label">
+      Informe em quantos meses irá pagar
+    </label>
+    <input type="number" class="form-control mb-3" id="exampleFormControlInput1" [(ngModel)]="periodo"> 
+
+
+  <table class="table" *ngIf="periodo and juros and valor">
     <thead>
       <tr>
         <th>Período</th>

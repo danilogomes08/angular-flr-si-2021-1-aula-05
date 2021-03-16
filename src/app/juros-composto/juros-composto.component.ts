@@ -24,7 +24,6 @@ export class JurosCompostoComponent implements OnInit {
     let list: number[] = [];
     for(let i = 1; i <= this.periodo; i++)
       list.push(this.getPeriodo());
-      console.log(list);
       return list;
   }
 
